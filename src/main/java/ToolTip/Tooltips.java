@@ -34,16 +34,26 @@ public class Tooltips {
 				if(e.getAttribute("title").equals(str)) {
 					expectedtxt = str;
 					Assert.assertEquals(e.getAttribute("title"), expectedtxt);
-					System.out.println("title "+ e.getAttribute("title") + " " + expectedtxt);
+					//System.out.println("title "+ e.getAttribute("title") + " " + expectedtxt);
 				}
 			}	
 		}
 		
 		//Scenario 2: JQuery Plugin
+		
 		driver.get("http://demo.guru99.com/test/tooltip.html");
 		Thread.sleep(5000);
 		WebElement download = driver.findElement(By.id("download_now"));
+		String expectedlink = "What's new in 3.2";
+		Actions builder = new Actions(driver);
 		
+		builder.clickAndHold().moveToElement(download);
+		builder.moveToElement(download).build().perform();
+		
+		WebElement tooltip = driver.findElement(By.xpath("//div[@class='tooltip']/a"));
+		String actualtext = tooltip.getText();
+		System.out.println(actualtext);
+		Assert.assertEquals(actualtext, expectedlink);
 		
 		driver.quit();
 	}
