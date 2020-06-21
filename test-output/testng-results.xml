@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13961" started-at="2020-04-15T10:40:15Z" finished-at="2020-04-15T10:40:29Z">
+  <suite name="Default suite" duration-ms="23762" started-at="2020-06-04T13:58:24Z" finished-at="2020-06-04T13:58:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13961" started-at="2020-04-15T10:40:15Z" finished-at="2020-04-15T10:40:29Z">
-      <class name="WindowsHandling.SwitchWindows">
-        <test-method status="PASS" signature="DriverSetup()[pri:0, instance:WindowsHandling.SwitchWindows@7cd62f43]" name="DriverSetup" is-config="true" duration-ms="10546" started-at="2020-04-15T10:40:15Z" finished-at="2020-04-15T10:40:26Z">
+    <test name="Default test" duration-ms="23762" started-at="2020-06-04T13:58:24Z" finished-at="2020-06-04T13:58:48Z">
+      <class name="Driver.WebDriverManagerInvoke">
+        <test-method status="PASS" signature="invokeFireFoxDriver()[pri:0, instance:Driver.WebDriverManagerInvoke@7cd62f43]" name="invokeFireFoxDriver" duration-ms="12793" started-at="2020-06-04T13:58:24Z" finished-at="2020-06-04T13:58:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DriverSetup -->
-        <test-method status="PASS" signature="AlertBox()[pri:0, instance:WindowsHandling.SwitchWindows@7cd62f43]" name="AlertBox" duration-ms="2081" started-at="2020-04-15T10:40:26Z" finished-at="2020-04-15T10:40:28Z">
+        </test-method> <!-- invokeFireFoxDriver -->
+        <test-method status="PASS" signature="invokechromeBrowser()[pri:0, instance:Driver.WebDriverManagerInvoke@7cd62f43]" name="invokechromeBrowser" duration-ms="10941" started-at="2020-06-04T13:58:37Z" finished-at="2020-06-04T13:58:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertBox -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:WindowsHandling.SwitchWindows@7cd62f43]" name="TearDown" is-config="true" duration-ms="1313" started-at="2020-04-15T10:40:28Z" finished-at="2020-04-15T10:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- WindowsHandling.SwitchWindows -->
+        </test-method> <!-- invokechromeBrowser -->
+      </class> <!-- Driver.WebDriverManagerInvoke -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

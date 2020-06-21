@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WindowsHandling.SwitchWindows">
+      <class name="Driver.WebDriverManagerInvoke">
         <methods>
-          <include name="WindowMessage"/>
-          <include name="TearDown"/>
-          <include name="DriverSetup"/>
+          <include name="invokeFireFoxDriver"/>
         </methods>
-      </class> <!-- WindowsHandling.SwitchWindows -->
+      </class> <!-- Driver.WebDriverManagerInvoke -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
